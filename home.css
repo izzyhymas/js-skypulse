@@ -1,0 +1,106 @@
+body {
+    background-color: #303841;
+    color: #e4f1fe;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navbar, bg-body-tertiary, fixed-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 100px;
+}
+
+.main-nav, .btn, btn-secondary {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn, btn-secondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 60px;
+    background-color: #50717b;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+.all-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #50717b;
+    color: rgb(255, 255, 255);
+    width: 20rem;
+    height: 15rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#current-temp {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0;
+}
+
+#current-condition {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+#weather-alert {
+    padding-top: 40px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#hourly-weather {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.my-chart {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    border: solid 3px #50717b;
+    border-radius: 10px;
+    margin: 60px;
+}

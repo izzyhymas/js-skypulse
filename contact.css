@@ -1,0 +1,90 @@
+body {
+    background-color: #303841;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    font-size: large;
+    font-weight: 800;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #50717b;
+    border-radius: 20px;
+    align-items: center;
+    margin: 70px auto;
+    margin-top: 50px;
+    padding: 15px;
+    max-width: 550px;
+}
+
+form label {
+    margin: 5px;
+}
+
+.dropdown {
+    padding-bottom: 15px;
+}
+
+.dropdown-menu {
+    background-color: #303841;
+}
+
+#submit {
+    background-color: #43515e;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #3a4042;
+}
+
+#fname,
+#email {
+    background-color: rgb(238, 242, 250);
+    color: #3a4042;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 350px;
+    max-width: 350px;
+}
+
+textarea {
+    background-color: rgb(238, 242, 250);
+    color: #3a4042;
+    border-radius: 5px;
+    border: none;
+    max-height: 400px;
+    width: 350px;
+    max-width: 350px;
+}
+
+.btn {
+    background-color: #43515e;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3a4042;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+.contact-me {
+    margin-top: 70px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}

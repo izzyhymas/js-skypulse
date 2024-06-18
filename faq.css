@@ -1,0 +1,46 @@
+body {
+    background-color: #303841;
+    color: #e4f1fe;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+.btn, btn-secondary {
+    background-color: #50717b;
+    border: none;
+    font-size: large;
+    font-weight: 800;
+    height: 80px;
+}
+
+.btn:hover {
+    background-color: #415d65;
+}
+
+.card, card-body {
+    background-color: rgb(43, 48, 54);
+    font-weight: 600;
+    text-align: center;
+} 
+
+.info {
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: xx-large;
+}

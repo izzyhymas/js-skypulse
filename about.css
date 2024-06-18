@@ -1,0 +1,40 @@
+body {
+    background-color: #303841;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.navbar-brand {
+    font-weight: 800;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+hr {
+    width: 550px;
+}
+
+.info {
+    background-color: #50717b;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    padding: 50px;
+    max-width: 550px;
+}
