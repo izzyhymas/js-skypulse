@@ -129,7 +129,10 @@
             <h5 class="card-title">Weather Condition</h5>
             <hr />
             <p id="current-condition"></p>
-            <p id="current-temp"></p>
+            <div id="temp-degree">
+              <p id="current-temp"></p>
+              <p id="degree">°F</p>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -148,6 +151,7 @@
         </div>
       </div>
 
+      <!-- Chart -->
       <div class="my-chart">
         <canvas id="myChart"></canvas>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -169,17 +173,9 @@
               datasets: [
                 {
                   label: "Temperature",
-                  data: [12, 19, 3, 5, 2, 3, 4],
-                  borderWidth: 1,
+                  data: [102, 103, 91, 96, 100, 102, 104],
                 },
               ],
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true,
-                },
-              },
             },
           });
         </script>
