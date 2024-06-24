@@ -61,7 +61,13 @@ document.addEventListener("DOMContentLoaded", async function () {
       { day: days[4], temp: temp[4] },
       { day: days[5], temp: temp[5] },
       { day: days[6], temp: temp[6] },
-      { day: days[7], temp: temp[7] }
+      { day: days[7], temp: temp[7] },
+      { day: days[8], temp: temp[8] },
+      { day: days[9], temp: temp[9] },
+      { day: days[10], temp: temp[10] },
+      { day: days[11], temp: temp[11] },
+      { day: days[12], temp: temp[12] },
+      { day: days[13], temp: temp[13] }
     ];
 
     new Chart(ctx, {
