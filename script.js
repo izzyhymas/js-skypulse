@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", async function () {
   };
 
   // Weekly Forecast
-const days = [];
-const temp = [];
+  const days = [];
+  const temp = [];
   const getWeeklyForecast = async () => {
     const weeklyForecast = await fetch(
       "https://api.weather.gov/gridpoints/SLC/20,19/forecast"
     );
-    const data4 = await weeklyForecast.json();
+    const data4 = await weeklyForecast.json()
     const forecast = data4["properties"]["periods"];
 
     for (let i = 0; i < forecast.length; i++) {
@@ -52,6 +52,30 @@ const temp = [];
     }
     console.log(days);
     console.log(temp);
+    const ctx = document.getElementById("myChart");
+    const data = [
+      { day: days[0], temp: temp[0] },
+      { day: days[1], temp: temp[1] },
+      { day: days[2], temp: temp[2] },
+      { day: days[3], temp: temp[3] },
+      { day: days[4], temp: temp[4] },
+      { day: days[5], temp: temp[5] },
+      { day: days[6], temp: temp[6] },
+      { day: days[7], temp: temp[7] }
+    ];
+
+    new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: data.map((row) => row.day),
+        datasets: [
+          {
+            label: "Daily Temperature",
+            data: data.map((row) => row.temp),
+          },
+        ],
+      },
+    });
   };
 
   // Alerts
@@ -65,31 +89,6 @@ const temp = [];
 
     document.getElementById("weather-alert").innerHTML = alert;
   };
-
-
-  const ctx = document.getElementById("myChart");
-  const data = [
-    { day: days, temp: temp },
-    { day: days, temp: temp },
-    { day: 2012, temp: 15 },
-    { day: 2013, temp: 25 },
-    { day: 2014, temp: 22 },
-    { day: 2015, temp: 30 },
-    { day: 2016, temp: 28 },
-  ];
-
-  new Chart(ctx, {
-    type: "line",
-    data: {
-      labels: data.map((row) => row.day),
-      datasets: [
-        {
-          label: "Daily Temperature",
-          data: data.map((row) => row.temp),
-        },
-      ],
-    },
-  });
 
   getCurrentForecast();
   get24HourForecast();
